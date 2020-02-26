@@ -10,6 +10,12 @@ ul{
 a{
 	text-decoration: none;
 }
+h1{
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'Oswald', sans-serif ;
+	color: #56CC9D;
+}
 	h2 {
 	display: inline-block;
 	padding: 2px 20px 6px 20px;
@@ -33,12 +39,18 @@ h3 {
 .header-bg{
 	background: #56CC9D;
 }
-.logo::after{
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo::before{
 	display: block;
 	content: '';
-	height: 10px;
-	width: 4px;
-	background: #FFFFFF;
+	background: url('../img/Shape.svg');
+  background-size: 55px 55px;
+	margin: 0 5px;
+   height: 55px;
+   width: 55px;
 	
 }
 .menu-flex{
@@ -156,3 +168,21 @@ img {
 	flex: 1;
 }
 
+/* Script - Effects */
+[data-animais="item"]{
+	display: none;
+}
+[data-animais="item"].ativo{
+	display: flex;
+	animation: show .6s forwards; 
+}
+@keyframes show{
+	from{
+		opacity: 0;
+		transform: translate3d(-50px,0,0);
+	}
+	to{
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+}
