@@ -1,5 +1,3 @@
-
-
 export default function initTabNav() {
   const menu = document.querySelectorAll('[data-animais="menu"] li');
   const itemMenu = document.querySelectorAll('[data-animais="item"]');
