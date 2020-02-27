@@ -49,8 +49,8 @@ h3 {
 	background: url('../img/Shape.svg');
   background-size: 55px 55px;
 	margin: 0 5px;
-   height: 55px;
-   width: 55px;
+  height: 55px;
+  width: 55px;
 	
 }
 .menu-flex{
@@ -115,7 +115,6 @@ p {
 img {
 	display: block;
 	max-width: 100%;
-	float: right;
 }
 
 .item {
@@ -153,7 +152,6 @@ img {
 .florestas h2 {
 	top: -25px;
 	right: auto;
-
 }
 
 .florestas .item {
@@ -174,7 +172,7 @@ img {
 }
 [data-animais="item"].ativo{
 	display: flex;
-	animation: show .6s forwards; 
+	animation: show .8s forwards; 
 }
 @keyframes show{
 	from{
@@ -191,7 +189,7 @@ img {
 }
 [data-floresta="item"].ativo{
 	display: flex;
-	animation: show .6s forwards; 
+	animation: show .8s forwards; 
 }
 @keyframes show{
 	from{
@@ -202,4 +200,50 @@ img {
 		opacity: 1;
 		transform: translate3d(0,0,0);
 	}
+}
+/* Contato */
+.contato{
+	background: #56CC9D;
+	
+}
+.contato-container{
+	max-width: 960px;
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.contato-item{
+	flex: 1;
+}
+
+.h2-contato{
+	display: inline-block;
+	padding: 2px 20px 6px 20px;
+	min-width: 200px;
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+	position: relative;
+	color: white;
+	letter-spacing: 5px;
+}
+.contato h1{
+	padding: 20px;
+	color: #FFFFFF;
+}
+.contato-bg{
+	background: #FFFFFF;
+	box-shadow: 2px 2px 4px 0px rgba(36,36,36,1);
+}
+.contato-bg h3{
+
+	text-transform: uppercase;
+	font-family: monospace;
+
+}
+.contato-form{
+	display: block;
 }
