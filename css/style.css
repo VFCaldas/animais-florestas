@@ -239,11 +239,56 @@ img {
 	box-shadow: 2px 2px 4px 0px rgba(36,36,36,1);
 }
 .contato-bg h3{
-
+	display: block;
+	margin: 20px auto;
 	text-transform: uppercase;
 	font-family: monospace;
+	text-align: center;
+}
+.subtitle-3{
+	display: block;
+	margin: 20px auto;
+	text-transform: uppercase;
+	font-family: monospace;
+	text-align: center;
+}
+.contato-form label{
+	font-size: 1.5rem;
+	padding: 5px;
+	font-family: monospace;
+	color: #777;
+  display: block;
+  margin: 10px 10px 0px 42px;
 
 }
-.contato-form{
-	display: block;
+.contato-form input{
+	border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+	margin: 10px auto;
+}
+.contato-form button{
+	cursor: pointer;
+	margin: 0 auto;
+  background:#56CC9D ;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 50%;
+}
+.list-contact{
+	font-family: monospace;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #777;
+}
+.list-contact li{
+	padding: 15px;
 }
