@@ -6,6 +6,7 @@
 }
 ul{
 	list-style: none;
+	
 }
 a{
 	text-decoration: none;
@@ -83,12 +84,12 @@ h3 {
 }
 /* Sections Animais */
 .animais{
-	padding: 40px;
+	padding: 60px 0;
 }
 .tab-menu{
 	display: flex;
 	justify-content: center;
-
+	margin-bottom:20px;
 }
 .tab-menu li a{
 	text-align: center;
@@ -204,7 +205,7 @@ img {
 /* Contato */
 .contato{
 	background: #56CC9D;
-	
+	padding: 60px 0;
 }
 .contato-container{
 	max-width: 960px;
@@ -236,7 +237,7 @@ img {
 }
 .contato-bg{
 	background: #FFFFFF;
-	box-shadow: 2px 2px 4px 0px rgba(36,36,36,1);
+	box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
 }
 .contato-bg h3{
 	display: block;
@@ -262,7 +263,7 @@ img {
 
 }
 .contato-form input{
-	border: 2px solid #f0f0f0;
+	border: 2px solid #56CC9D;
   border-radius: 4px;
   display: block;
   width: 80%;
@@ -291,4 +292,35 @@ img {
 }
 .list-contact li{
 	padding: 15px;
+}
+.footer{
+	padding: 30px;
+	text-align: center;
+	background: #333333;
+}
+.footer p{
+	color: #FFFFFF;
+	margin: 0;
+}
+.footer a {
+	color: #ffffff;
+	margin-top: 30px ;
+}
+
+[data-button="scrolltop"]{
+	position: fixed;
+  bottom: 20px;
+  right: 20px;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	padding: 10px;
+	outline: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	background: #ffffff;
+	display: none;
+}
+[data-button="scrolltop"].ativo{
+	display: block;
+	animation: show .8s forwards;
 }
