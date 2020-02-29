@@ -12,9 +12,7 @@ export default function initScrollTop() {
     if (scrolled < coords) {
       button.classList.remove('ativo');
     }
-
   }
-
   function scrollTop(event) {
     event.preventDefault();
     const buttonTop = window.scrollTo({
