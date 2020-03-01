@@ -6,10 +6,10 @@ export default function initScrollTop() {
   function trackScroll() {
     const scrolled = window.pageYOffset;
     const coords = document.documentElement.clientHeight;
-    if (scrolled > coords) {
+    if (scrolled >coords) {
       button.classList.add('ativo');
     }
-    if (scrolled < coords) {
+    if (scrolled <coords) {
       button.classList.remove('ativo');
     }
   }
@@ -20,7 +20,6 @@ export default function initScrollTop() {
       left: 0,
       behavior: "smooth",
     })
-    return buttonTop;
   }
   window.addEventListener('scroll', trackScroll);
   button.addEventListener('click', scrollTop)
